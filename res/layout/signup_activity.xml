@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="25"
+        android:hint="Password"
+        android:textColorHint="#000"        
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_below="@+id/addressText"
+        android:layout_marginTop="28dp"
+        android:ems="25"
+        android:hint="Email"
+        android:textColorHint="#000"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_below="@+id/nameText"
+        android:hint="Address"
+        android:textColorHint="#000"        
+        android:layout_marginTop="30dp"
+        android:ems="25"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_below="@+id/contactText"
+        android:textColorHint="#000"        
+        android:layout_marginTop="29dp"
+        android:ems="25"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageText"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:onClick="createAccount" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/signUpBtn"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="29dp"
+        android:text="SIGN UP"
+        android:textColor="#000"        
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/confirmPassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ageText"
+        android:layout_below="@+id/passwordText"
+        android:layout_marginTop="29dp"
+        android:ems="25"
+        android:textColorHint="#000"        
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/contactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmPassText"
+        android:layout_below="@+id/confirmPassText"
+        android:layout_marginTop="29dp"
+        android:ems="25"
+        android:textColorHint="#000"        
+        android:hint="Contact No."
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmPassText"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:ems="25"
+        android:textColorHint="#000"        
+        android:hint="Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+</ScrollView>

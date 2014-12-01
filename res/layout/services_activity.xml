@@ -1,0 +1,102 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+    	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e4e4e4"
+        >
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF"
+    >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Form"
+        android:textSize="30dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+   		android:paddingBottom="10dp"/>
+</LinearLayout>
+<ScrollView
+    android:layout_below="@+id/header"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"    >
+<LinearLayout
+    android:layout_below="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/serviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColorHint="#000"
+        android:hint="Customer Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/serviceBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Bill Number"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/serviceContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Contact Number"
+        android:textColorHint="#000"/>
+
+    <EditText
+        android:id="@+id/serviceAddress"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="Address to pick up mobile"
+        android:textColorHint="#000"
+        android:layout_marginTop="20dp"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/serviceComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#000"
+        android:hint="Brief about your complaint"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/serviceSubmit"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Submit" 
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+	
+</LinearLayout>
+</ScrollView>    
+    </RelativeLayout>

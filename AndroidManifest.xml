@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onlinemobileshop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-permission android:name="android.permission.INTERNET"/>    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Mobile" >
+        <activity
+            android:name="com.onlinemobileshop.WelcomeActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+              	<action android:name="android.intent.action.MAIN"/>
+              	<category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+       </activity>
+       <activity
+            android:name="com.onlinemobileshop.SignUpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.SIGNUPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.onlinemobileshop.AddressActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.ADDRESSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               <activity
+            android:name="com.onlinemobileshop.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.LOGINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="com.onlinemobileshop.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.onlinemobileshop.SortActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.SORTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+       <activity
+            android:name="com.onlinemobileshop.MobileActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.MOBILEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                
+               <activity
+            android:name="com.onlinemobileshop.AccessoriesActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.ACCESSORIESACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               <activity
+            android:name="com.onlinemobileshop.ServicesActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.SERVICESACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.onlinemobileshop.DetailedMobileActivity"
+            android:label="@string/app_name"
+            />
+         <activity
+            android:name="com.onlinemobileshop.HelpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.HELPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                 <activity
+            android:name="com.onlinemobileshop.CartActivity"
+            android:noHistory="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.onlinemobileshop.CARTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

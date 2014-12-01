@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Address"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/shipAddress"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:layout_weight="0.25"
+        android:ems="10"
+        android:inputType="textPostalAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shipAddress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="36dp" >
+
+        <RadioButton
+            android:id="@+id/cod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Cash On Delivery" />
+
+        <RadioButton
+            android:id="@+id/netbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Banking" />
+
+        <RadioButton
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit/Debit Card" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/shipPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Payment"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg"
+        android:text="Place Order"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

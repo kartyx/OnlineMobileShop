@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FfF">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleName"
+            android:textStyle="bold" 
+            android:text="Moto G"
+            android:paddingLeft="10dp"
+            ></TextView>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleColor"
+            android:text="Black"
+            android:paddingLeft="10dp"
+           />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33b5e5"/>
+    </LinearLayout>
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        android:background="#FFF">
+	
+         <TextView
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFFER"
+            android:padding="4dp"
+            android:background="#000"
+            android:visibility="invisible"
+            android:textColorHighlight="#FFF" 
+            android:textColor="#FFF"
+            />
+        
+		<ImageView
+		    android:id="@+id/MobileImage"
+		    android:layout_width="match_parent"
+		    android:layout_height="230dp"
+		    android:layout_alignParentBottom="true"
+		    android:contentDescription="@string/app_name"
+		    android:src="@drawable/ic_launcher" />
+             
+    </RelativeLayout>
+   
+	<LinearLayout 
+	   android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FfF"
+        android:layout_margin="6dp"
+         >
+	 <TableLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#FFF">
+	     
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Brand"
+				android:textColor="#000"	
+				android:textStyle="bold"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/brandname"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Model"
+			android:textStyle="bold"  
+			android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/modelname"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Size"
+				android:textStyle="bold"  android:textColor="#000"  
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/screensize"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Internal Memory"
+				android:textStyle="bold"  
+				android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/internalmem"
+	             android:text="16 GB"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	      	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="External Memory"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/externalmem"
+	             android:text="16 GB"
+	             />
+	     </TableRow>     
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Primary Camera"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/primarycam"
+	             android:text="13 MP"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" 
+	         android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Secondary Camera"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/secondarycam"
+	             android:text="5 MP"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Processor"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/processorconf"
+	             android:text="2Ghz Quad Core"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="RAM"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/ram"
+	             android:text="2 GB"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="BatteryCap"
+android:textStyle="bold"  android:textColor="#000"
+            android:paddingRight="50dp"
+            />
+	         <TextView 
+	             android:id="@+id/battery"
+	             android:text="2500mAh"
+	             />
+	     </TableRow>
+	     <View 
+	             android:background="#000"
+	             android:layout_width="wrap_content"
+	             android:layout_height="1dp"/>
+	     <TableRow android:background="#FFF" android:layout_margin="0.2dp"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	         <TextView 
+	             android:text="Warranty"
+				android:textStyle="bold"  android:textColor="#000"
+            	android:paddingRight="50dp"
+            	android:layout_marginRight="2dp"
+            />
+	         <TextView 
+	             android:layout_marginLeft="2dp"
+	             android:id="@+id/warranty"
+	             android:text="1 yr manufacturer warranty"
+	             />
+	     </TableRow>
+	 </TableLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:background="@drawable/button_bg"
+	        android:layout_width="180dp"
+	        android:layout_height="wrap_content"
+	        android:text="BUY NOW"
+	        android:textColor="#FFF"
+	        android:id="@+id/buynow"/>"
+
+	    <Button
+	        android:layout_width="160dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/button_bg"
+	        android:text="ADD TO CART"
+	        android:id="@+id/addtocart"
+	        android:drawableLeft="@drawable/cartsmall"
+	        android:textColor="#FFF" />
+	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

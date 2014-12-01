@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="desc"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_launcher" />
+	<View
+	    android:layout_marginTop="10dp"
+    	android:layout_width="1dp"
+    	android:layout_height="90dp"
+    	android:background="#000000"
+    	android:paddingTop="9dp"
+    	android:paddingBottom="5dp"
+    	android:layout_toRightOf="@id/pic" />
+    <TextView
+        android:id="@+id/MobileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="18sp"
+        android:clickable="false"
+        android:text="SAMSUNG NOTE"
+         />
+
+    <TextView
+        android:id="@+id/Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MobileName"
+        android:layout_below="@+id/MobileName"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_marginLeft="5dp"
+        android:text="Black"
+        android:textSize="12sp" 
+        />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Color"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5dp"
+        android:text="Rs.22000" />
+
+    <TextView
+        android:id="@+id/Features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_alignLeft="@+id/Price"
+        android:layout_below="@+id/Price"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Features" />
+
+</RelativeLayout>

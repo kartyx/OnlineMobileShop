@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical" 
+    android:background="#2b2c2d"
+    >
+ 
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dip"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="#FFF"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+    <View 
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+ 
+</LinearLayout>
